@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal for Ruqaiya</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #064e3b, #0f766e);
+      color: #fef9c3;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+    .proposal {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      max-width: 700px;
+      margin: auto;
+      border: 2px solid #d4af37;
+    }
+    h1 {
+      font-size: 2.8em;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.3em;
+      color: #fefce8;
+    }
+    .buttons {
+      margin-top: 25px;
+    }
+    .btn {
+      background: #d4af37;
+      color: #064e3b;
+      border: none;
+      padding: 15px 35px;
+      border-radius: 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #facc15;
+      color: #000;
+    }
+    .career {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      font-size: 1.1em;
+      border: 1px solid #d4af37;
+    }
+    .crescent {
+      font-size: 3em;
+      color: #facc15;
+    }
+    .lantern {
+      font-size: 2em;
+      color: #fef3c7;
+    }
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: transparent;
+      z-index: -1;
+    }
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="proposal">
+    <div class="crescent">🌙</div>
+    <h1>Ruqaiya, My Neural Queen 💖</h1>
+    <p>From Qadir to Ruqaiya (29 May 2006), an Islamic soul, a pure heart 🌸</p>
+    <p>Will you be my Humsafar for life? Not as GF–BF, but as true life partners (Shohar & Humsafar). Insha’Allah. 🤲</p>
+    <p>I don’t want just moments with you, I want a lifetime with you. 💍</p>
+    <p>I wish to be your Shohar, the one who stands beside you in Dunya and prays with you for Jannah. 🌹</p>
+    <p>Ruqaiya, will you be my Wife, my Humsafar, my Dua come true? ❤️</p>
+
+    <div class="buttons">
+      <a class="btn" href="https://wa.me/919905166009?text=I%20accepted%20you%20as%20my%20Shohar%20%E2%9D%A4%EF%B8%8F%20We%20will%20not%20be%20GF-BF%2C%20we%20will%20see%20ourselves%20as%20Humsafar%20Insha%E2%80%99Allah">Yes, I Accept</a>
+    </div>
+
+    <div class="career">
+      <div class="lantern">🕯️</div>
+      <h2>Career First, Future Together 🌟</h2>
+      <p>Right now, we focus on our dreams: Ruqaiya (BCA) 🎓 & Qadir (JEE) 📘.</p>
+      <p>Insha’Allah, once we achieve our goals, we will complete our journey as Humsafar ❤️.</p>
+    </div>
+  </div>
+
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    for(let i=0; i<50; i++){
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random()*100 + '%';
+      star.style.left = Math.random()*100 + '%';
+      star.style.animationDuration = (2 + Math.random()*3) + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
